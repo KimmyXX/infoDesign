@@ -1,5 +1,9 @@
 <template>
-  <div>123</div>
+  <div>
+    <div>123</div>
+    <router-link to="/test">test</router-link>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
