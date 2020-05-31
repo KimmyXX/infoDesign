@@ -1,5 +1,9 @@
 <template>
-  <div>test</div>
+  <div>
+    <div>test</div>
+    <router-link to="/test/testchildren">testchildren</router-link>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
