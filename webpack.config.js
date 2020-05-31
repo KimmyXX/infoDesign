@@ -15,8 +15,9 @@ module.exports = {
   ],
   module: {
     rules: [
-      { test: /.vue$/, use: 'vue-loader' },
-      { test: /.css$/, use: ['style-loader','css-loader'] },
+      { test: /\.vue$/, use: 'vue-loader' },
+      { test: /\.css$/, use: ['style-loader','css-loader'] },
+      { test: /\.(ttf|eot|woff2?|ttf|svg)$/, use: 'url-loader' }
     ]
   }
 }

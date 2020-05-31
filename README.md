@@ -19,7 +19,9 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
     plugin: [
         new VueLoaderPlugin()
     ]
-
+处理字体文件：
+1. 安装 url-loader
+2. webpack.config.js 配置
 
 
 自动生成html  html-webpack-plugin
