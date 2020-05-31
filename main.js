@@ -1,3 +1,9 @@
-window.onload = function() {
-  console.log("successxxxxx");
-}
+import Vue from 'vue'
+import App from './component/App.vue'
+
+new Vue({
+  el: '#app',
+  render(h) {
+    return h(App)
+  }
+})

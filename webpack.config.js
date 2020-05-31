@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
@@ -9,6 +10,13 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new HtmlWebpackPlugin()
-  ]
+    new HtmlWebpackPlugin(),
+    new VueLoaderPlugin()
+  ],
+  module: {
+    rules: [
+      { test: /.vue$/, use: 'vue-loader' },
+      { test: /.css$/, use: ['style-loader','css-loader'] },
+    ]
+  }
 }
