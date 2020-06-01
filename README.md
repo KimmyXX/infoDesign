@@ -25,3 +25,20 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 
 自动生成html  html-webpack-plugin
+
+按需引入Element-ui
+1. 安装 babel-plugin-component：
+npm install babel-plugin-component -D
+2. 然后，将 .babelrc 修改为：
+{
+  "presets": [["es2015", { "modules": false }]],
+  "plugins": [
+    [
+      "component",
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ]
+  ]
+}
