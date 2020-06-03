@@ -42,3 +42,7 @@ npm install babel-plugin-component -D
     ]
   ]
 }
+
+.gitignore文件设定取消上传的文件
+取消上传node_modules减小体积
+通过 npm i 或  cnpm i 下载需要的包 
